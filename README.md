@@ -1,5 +1,7 @@
 # uploadmeclient
 
+Upload and share files SaaS project 
+
 ## Project setup
 ```
 npm install
