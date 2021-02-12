@@ -1,7 +1,9 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="p-12 rounded-lg bg-gray-200 text-center">
+     <h1 class="text-3xl font-medium mb-3 text-gray-800">
+       UloadMe 🌊
+     </h1>
+     <p class="text-gray-500">Instantly Upload Files, Share them with anyone</p>
   </div>
 </template>
 

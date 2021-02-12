@@ -1,3 +1,11 @@
+
 module.exports = {
-  lintOnSave: false
+  lintOnSave: false,
+ 
+  devServer :{
+    public : 'localhost',
+    host : 'localhost',
+    disableHostCheck : true
+  }  
+ 
 }
