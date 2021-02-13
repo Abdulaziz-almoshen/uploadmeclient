@@ -30,13 +30,14 @@ export default {
         async signIn ({ dispatch }, credentials) {
           await axios.get('/sanctum/csrf-cookie')
           await axios.post('api/login', credentials)
-    
+
           return dispatch('me')
         },
     
-        async signOut ({ dispatch }) {
-          await axios.post('api/logout')
-    
+        async logout ({ dispatch }) {
+          await axios.post('api/logout').then({
+          })
+
           return dispatch('me')
         },
     

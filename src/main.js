@@ -7,7 +7,12 @@ import axios from 'axios'
 axios.defaults.withCredentials = true
 axios.defaults.baseURL = 'http://localhost:8000/'
 
-createApp(App).use(store).use(router).mount('#app')
+store.dispatch('auth/me').then(res=>{
+    createApp(App).use(store).use(router).mount('#app')
+}).catch(err=>{
+    createApp(App).use(store).use(router).mount('#app')
+
+})
 import './assets/CSS/index.css'
 
 
